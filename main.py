@@ -9,10 +9,12 @@ import subprocess
 import webbrowser
 import os
 import time
+from dotenv import load_dotenv
+load_dotenv()
 
 
 client = genai.Client(
-    api_key="AIzaSyD6zRE0fWelD8k6eFbIgv0XX0NrYrwY2ak"
+    api_key=os.getenv('GEMINI_API_KEY')
 )
 
 
