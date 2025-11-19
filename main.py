@@ -90,25 +90,3 @@ if __name__ == "__main__":
             webbrowser.open(response.text)
 
         
-
-
-        # if 'wikipedia' in query:
-        #     speak("Searching Wikipedia")
-        #     query = query.replace("wikipedia", "")
-        #     results = wikipedia.summary(query, sentences = 2)
-        #     speak("According to wikipedia")
-        #     print(results)
-        #     speak(results)
-        # elif 'open youtube' in query:
-        #     os.system("open https://youtube.com")
-
-        # elif 'open google' in query:
-        #     os.system("open https://google.com")
-
-        # elif 'open stackoverflow' in query:
-        #     os.system("open https://stackoverflow.com")
-        
-        # elif 'current time' in query:
-        #     current_time_tuple = time.localtime()
-        #     formatted_time = time.strftime("%H:%M:%S", current_time_tuple)
-        #     speak(formatted_time)
