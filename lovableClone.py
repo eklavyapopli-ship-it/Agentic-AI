@@ -66,7 +66,7 @@ The website should include:
      • Filter tasks (All / Completed / Pending)
 
 3. UI/Design Requirements:
-   - Use a dark theme (black/grey) with neon blue highlights.
+   - Use a dark theme (black/grey) with neon green highlights.
    - Smooth animations for:
        • Button hover
        • New task appearing
