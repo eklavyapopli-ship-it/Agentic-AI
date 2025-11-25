@@ -68,14 +68,17 @@ The website should include:
      • Mark tasks as complete
      • Delete tasks
      • Filter tasks (All / Completed / Pending)
+     Add some pseudo data also that u feel is good, connect internet images, add some image cards etc and make professional
 
 3. UI/Design Requirements:
-   - Use a dark theme (black/grey) with neon green highlights.
+  - Use a dark theme But make it look professional.
    - Smooth animations for:
        • Button hover
        • New task appearing
        • Task deletion
    - Responsive layout for mobile and desktop.
+    Add some pseudo data also that u feel is good, connect internet images, add some image cards etc and make professional
+
 
 4. JavaScript Requirements:
    - Store tasks in browser localStorage.

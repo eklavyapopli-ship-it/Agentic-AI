@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TaskMaster Pro</h1>
+            <p>Smart Productivity for Everyone</p>
+            <button id="start-now">Start Now</button>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main id="main">
+        <section class="task-manager">
+            <h2>Your Tasks</h2>
+
+            <div class="input-section">
+                <input type="text" id="new-task-input" placeholder="Add a new task...">
+                <button id="add-task-button">Add Task</button>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="completed">Completed</button>
+                <button class="filter-button" data-filter="pending">Pending</button>
+            </div>
+
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </section>
+
+         <!-- Image Cards Section -->
+         <section class="image-cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1588981874371-3d59b577af64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Productivity 1">
+                <h3>Focus & Clarity</h3>
+                <p>Achieve laser focus and clarity in your daily tasks.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523580894865-b43dd3c5d23b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Productivity 2">
+                <h3>Seamless Collaboration</h3>
+                <p>Collaborate effortlessly with your team on projects.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Productivity 3">
+                <h3>Time Management</h3>
+                <p>Master your time and boost your overall productivity.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TaskMaster Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
