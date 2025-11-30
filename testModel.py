@@ -4,11 +4,9 @@ from google.genai import types
 import datetime
 import speech_recognition as sr
 import sounddevice as sd
-import wikipedia
 import subprocess
 import webbrowser
 import os
-import time
 from dotenv import load_dotenv
 load_dotenv()
 
