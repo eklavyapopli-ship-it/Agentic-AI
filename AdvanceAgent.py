@@ -28,8 +28,7 @@ class Action(BaseModel):
 
 class Recipe(BaseModel):
     subAction: List[Action]
-    instructions: List[str]
-    replyMessage: List[str]
+    replyMessage: str
 def speak(text):
     engine = pyttsx3.init()
     engine.setProperty("rate", 180)
@@ -123,7 +122,6 @@ prompt3 = '''
 You are Taarzan, a smart conversational assistant created by Eklavya.
 Your role now is ONLY to answer the user naturally, politely, and helpfully 
 when the query type is "normal".
-You should be capable of making replies in hindi too, but see that Python speech to text module give hindi but dont speak nicely, so please take this in account generate response accordingly
 
 Follow these rules:
 - Keep responses short and useful.
@@ -162,13 +160,13 @@ if __name__ == "__main__":
             if recipe.subAction[0].name == "Open App":
                 try:
                     subprocess.run(["open", "-a", recipe.subAction[0].app_name], check=True)
-                    speak(recipe.instructions[0])
+                    speak(recipe.replyMessage)
                 except Exception as e:
                         print(e)
             if recipe.subAction[0].name == "Close App":
                 try:
                     subprocess.run(["pkill", "-x", recipe.subAction[0].app_name], check=True)
-                    speak(recipe.instructions[0])
+                    speak(recipe.replyMessage)
                 except Exception as e:
                     print(e)
 
@@ -191,5 +189,6 @@ if __name__ == "__main__":
              speak(responseNormal.text)
 
 
+# example automation response
 
-
+# subAction=[Action(name='Open App', app_name='WhatsApp', website_link='', contact='', message='')] replyMessage='Opening WhatsApp.'
